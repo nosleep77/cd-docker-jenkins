@@ -5,9 +5,12 @@
 
 <module name="Checker">
      <module name="TreeWalker">
-          <module name="ConstantName"/>
-          <module name="JavadocType">
-               <property name="scope" value="public"/>
-          </module>
+	<module name="ConstantName">
+	    <property name="format" value="[a-zA-Z]+[a-zA-Z0-9]*|([a-z]+(_[a-z]+)+[a-z]+)|([A-Z]+(_[A-Z]+)+[A-Z]+)|([A-Z]+[a-z]*[0-9]*(_[A-Z]+[a-z]*[0-9]*)*)"/>
+	    <property name="ignoreModifiers" value="true"/>
+	</module>
+        <module name="JavadocType">
+             <property name="scope" value="public"/>
+        </module>
      </module>
 </module>
