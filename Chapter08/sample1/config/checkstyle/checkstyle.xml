@@ -6,7 +6,7 @@
 <module name="Checker">
      <module name="TreeWalker">
 	<module name="ConstantName">
-	    <property name="format" value="[a-zA-Z]+[a-zA-Z0-9]*|([a-z]+(_[a-z]+)+[a-z]+)|([A-Z]+(_[A-Z]+)+[A-Z]+)|([A-Z]+[a-z]*[0-9]*(_[A-Z]+[a-z]*[0-9]*)*)"/>
+	    <property name="format" value="[a-z]{3}[A-Z0-9]*"/>
 	    <property name="ignoreModifiers" value="true"/>
 	</module>
         <module name="JavadocType">
