@@ -5,10 +5,7 @@
 
 <module name="Checker">
      <module name="TreeWalker">
-       <module name="ConstantName">
-         <property name="format" value="[a-z]{3}[A-Z0-9]*"/>
-         <property name="ignoreModifiers" value="true"/>
-       </module>
+       <module name="ConstantName"/>
        <module name="JavadocType">
          <property name="scope" value="public"/>
        </module>
