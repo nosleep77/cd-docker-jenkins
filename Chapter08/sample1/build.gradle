@@ -49,15 +49,6 @@ task smokeTest(type: Test) {
 	systemProperties System.getProperties()
 }
 
-tasks.withType(Checkstyle) {
- ignoreFailures = true
- reports {
-   html.enabled = true
-   xml.enabled = false
- }
-}
-
-
 test {
 	exclude '**/acceptance/**'
 	exclude '**/smoke/**'
