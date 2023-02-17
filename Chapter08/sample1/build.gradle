@@ -52,9 +52,11 @@ task smokeTest(type: Test) {
 tasks.withType(Checkstyle) {
  ignoreFailures = true
  reports {
- html.enabled = true
+   html.required = true
+   xml.required = false
  }
 }
+
 
 test {
 	exclude '**/acceptance/**'
